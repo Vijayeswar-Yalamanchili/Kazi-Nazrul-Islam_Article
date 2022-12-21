@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Calibri;    
+}
+
+.header{
+    background-color: rgb(55, 51, 51);
+    color: coral;    
+    height: 30em;
+    width: 100%;
+    text-align: center;
+    padding: 80px;
+}
+
+.title{
+    padding-top: 180px;
+}
+
+.title-main{
+    font-size: 3.5em;
+}
+
+.nav-container {
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-content{
+    margin-right: 15px;
+    font-size: 20px;    
+}
+
+.nav-content a{
+    text-decoration: none;
+    color: coral;
+}
+
+.nav-content a:hover{
+    color: white;
+}
+
+.top-article{
+    padding: 70px 80px 50px;
+    display: block;  
+}
+
+.article-content{
+    font-size: 30px;
+    padding-right: 0%;    
+}
+
+.left-section{
+    padding-right: 30%;
+}
+
+.first-content{
+    font-size: 25px;
+}
+
+.button{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+}
+
+.learn{
+    background-color: rgb(142, 134, 134);
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(55, 51, 51);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.learn:hover {
+    background-color: rgb(106, 102, 102);
+    color: white;
+}
+
+.video{
+    background-color: rgb(249, 53, 53);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    margin: 0px 15px 0px;
+}
+
+.video:hover {
+    background-color: rgb(240, 130, 130);
+    color: rgb(29, 26, 26);
+}
+
+.books{
+    background-color: rgb(248, 102, 17);
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.books:hover {
+    background-color: rgb(242, 190, 47);
+    color: black;
+}
+
+.quote{
+    background-color: rgb(55, 51, 51);
+    font-size: 25px;
+    color: coral;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.award-header{
+    padding: 50px 0px 0px 0px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.awards{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card1,.card2, .card3, .card4 {
+    border: 1px ridge rgb(187,176,176);
+    padding: 5px 10px;
+    width: 300px;
+    height: 160px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.poetries-poems{
+    display: flex;
+    justify-content: space-between;    
+    padding: 50px 8%;
+}
+
+.article-one, .article-two{
+    width: 45%;
+}
+
+.poetries, .poems-songs{
+    font-size: 18px;
+}
+
+.footer{
+    background-color: rgb(55, 51, 51);
+    color: coral;    
+    height: auto;
+    width: 100%;
+    padding: 50px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about {
+    font-size: 14px;
+    padding-right:20px;
+    text-align: left;
+}
+
+.tools{
+    height: 100px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right:75px;
+    text-align: left;
+}
+
+.disclaimer p{
+    font-size: 14px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.disclaimer a{
+    color: rgb(135, 130, 130);
+    text-decoration: none;
+}
+
+.footer-hr{
+    height: 150px;
+    border: none;
+    width: 3px;
+    background-color: white;
+}
+
+@media(max-width:768px){
+    .button{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .awards{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .poetries-poems{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .article-one, .article-two{
+        width:100%
+    }
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-hr{
+        height: 3px;
+        width: auto;
+    }
+}
